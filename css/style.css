@@ -1,0 +1,158 @@
+.fundo{
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.cabecalho{
+    background-color: #1a1a1a;
+    padding: 10px 0;
+}
+
+.cabecalho .container{
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 50%;
+    width: 50%;
+}
+
+.menu-nav{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.menu-nav-link{
+    padding: 8px;
+    margin-bottom: 10px;
+    color: black;
+    background:#f4f264;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 1.5s;
+    border: 1px solid #fdfa1d;
+    border-radius: 7px;
+}
+
+.menu-nav-link:hover{
+    border: 1px solid #ff0012;
+    background: #dc1a28 ;
+}
+
+.principal .container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    width: 80%;
+}
+
+.lista-filmes{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: auto;
+}
+
+.lista-filmes-link{
+    display: flex;
+    margin: 2.5%;
+}
+
+.lista-filmes-link:nth-child(4n){
+    margin-right: 0;
+}
+
+.lista-filmes-link:hover{
+transform: scale(1.1);
+transition: 1.5s;
+}
+
+.filmes{
+    width: 100%;
+    height: 100%;
+   border-radius: 10px;
+}
+
+.rodape .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape{
+    background-color: #1a1a1a;
+}
+
+.rede-social-menu{
+    display: flex;
+    margin: 10px 0;
+}
+
+.rede-social{
+    padding: 0 10px;
+}
+
+.copyright{
+    color: #fdfa1d;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.icones{
+    width: 50px;
+    height: 50px;
+    background-color: #1a1a1a;
+}
+
+@media(max-width: 1024px){
+    .fundo{
+        background: url(https://wallpaperaccess.com/full/2387027.jpg) fixed
+    }
+
+.cabecalho .container{
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-nav-link{
+    width: 95%;
+}
+
+.principal{
+    padding: 0;
+}
+.principal .container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.lista-filmes{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+}
